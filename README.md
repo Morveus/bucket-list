@@ -7,7 +7,9 @@ Personal simple bucket list of futile and superficial life experiences
 - "Bucket list" inspired by the Life Checklist (see after)
 - No frameworks, only rudimentary HTML/JS/CSS for the sake of simplicity 
 - Three states (red, orange, green)
-- Progress bars
+- Manually set progress bars (set by absolute percentage or current value vs goal - for instance "37 out of 365 books read")
+- Automated progression by setting a start and end date (baby arriving, house being built, vacation coming)
+- Automatic completion at a specific date (without progress bar)
 - Auto dark/light mode
 
 ## Credits
@@ -85,8 +87,19 @@ let bucketList = [
 The `status` property can have one of three values:
 
 - `0` = Not done: This is represented with a red emoji cross and a red background.
-- `1` = In progress: This is represented with an hourglass emoji and an orange background. For items in progress, you can also add either `progress` and `goal` as integers which will compute a progress percentage, or directly provide percentage as `pct` (from 0 to 100). In both cases, this will display a progress bar inside the item.
+- `1` = In progress: This is represented with an hourglass emoji and an orange background. For those items, you can use the additional properties defined in the next section.
+
+For items in progress, you can also add either `progress` and `goal` as integers which will compute a progress percentage, or directly provide percentage as `pct` (from 0 to 100). In both cases, this will display a progress bar inside the item.
 - `2` = Done: This is represented with a green check mark emoji and a green background.
+
+## Properties
+Please note that all these properties are mutually exclusive. Do not use `pct` if you intend to use `progress` and `goal`, for instance.
+For all of these, status has to be `1`. Using `0` or `2` will result in the item being displayed as red (not started) or green (finished)
+
+- `start` and `end` when used together with dates formatted `YYYY-MM-DD`, will display a progress bar until it reaches the end date. Then, the item will turn green.
+- `done` when used alone with a date formatted `YYYY-MM-DD` will leave the item orange without a progress bar until the date is reached, then the item will turn green.
+- `pct` when set to an integer between 0 and 100 will display a static progress bar. It will be up to you to update its value whenever you feel like it.
+- `progress` and `goal`, when used together, will allow the script to compute a progression percentage. For instance your `goal` might be to read **999** books, and `progress` could be **123**, resulting in a progress bar displaying a **12%** progress
 
 This is what the progress bars look like:
 
@@ -98,6 +111,6 @@ Probably, if and when I feel like doing it:
 
 - Photo/images support
 - Countdowns
-- "Done" dates
+- "Done" dates **done** ✔️
 - Hyperlinks
 - Maps/GPS coordinates
