@@ -9,7 +9,7 @@ window.onload = function() {
         let image = bucketList[i].image;
 
         if (image === undefined) {
-            image = "images/hashed/" + getShortHash(bucketList[i].item) + ".jpg";
+            image = "images/hashed/" + await getShortHash(bucketList[i].item) + ".jpg";
         }
 
         console.log(image);
