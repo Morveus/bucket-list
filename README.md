@@ -8,9 +8,12 @@ Personal simple bucket list of futile and superficial life experiences
 - No frameworks, only rudimentary HTML/JS/CSS for the sake of simplicity 
 - Three states (red, orange, green)
 - Manually set progress bars (set by absolute percentage or current value vs goal - for instance "37 out of 365 books read")
+- Auto dark/light mode
+
+**NEW** on August 29th, 2023:
+
 - Automated progression by setting a start and end date (baby arriving, house being built, vacation coming)
 - Automatic completion at a specific date (without progress bar)
-- Auto dark/light mode
 
 ## Credits
 This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _exactly_ a bucket list: it is whatever you want it to be: bucket list, life checklist, achievements list...)
