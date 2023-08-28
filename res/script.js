@@ -50,11 +50,6 @@ window.onload = function() {
                                         #ffffcc ${percentage}%,
                                         #ffffcc 100%)`;
 
-                if(percentage == 100){
-                    itemDiv.className += " done";
-                    emoji = "✅";
-                }
-
                 break;
             case 2:
                 itemDiv.className += " done";
