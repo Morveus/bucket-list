@@ -43,7 +43,9 @@ window.onload = function() {
                     let today = new Date();
                     today.setHours(0, 0, 0, 0);
 
-                    if (doneDate.getTime() === today.getTime()) {
+			console.log(doneDate.getTime());
+			console.log(today.getTime());
+                    if (doneDate.getTime() <= today.getTime()) {
                         percentage = 100;
                     }
                 }
