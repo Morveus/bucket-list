@@ -71,10 +71,15 @@ function calculatePercentageAdvancement(date1, date2) {
         d2 = temp;
     }
 
-    // Make sure the current date is within the range
-    if (now < d1 || now > d2) {
+    // If current date is past the end date, return 100
+    if (now > d2) {
+        return 100;
+    }
+
+    // If current date is before the start date, return 0
+    if (now < d1) {
         console.log("Current date is not within the provided range");
-        return;
+        return 0;
     }
 
     // Calculate the total range and the advancement
