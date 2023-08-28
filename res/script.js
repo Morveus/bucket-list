@@ -19,6 +19,9 @@ window.onload = function() {
 		        let progress = bucketList[i].progress;
                 let goal = bucketList[i].goal;
 		        let pct = bucketList[i].pct;
+                let start = bucketList[i].start;
+                let end = bucketList[i].end;
+            
 
                 var percentage = 0;
 
@@ -29,6 +32,10 @@ window.onload = function() {
 		        if (typeof pct === 'number' && pct > 0) {
                    percentage = pct;
                 }
+
+                if (typeof start === 'string' && typeof end === 'string') {
+                    percentage = calculatePercentageAdvancement(start, end);
+                 }             
 
 		        itemDiv.setAttribute("data-progress", percentage);
 		        itemDiv.style.background = `linear-gradient(to right,
