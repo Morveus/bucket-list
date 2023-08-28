@@ -81,3 +81,13 @@ The `status` property can have one of three values:
 This is what the progress bars look like:
 
 ![Progress bars](https://lh3.googleusercontent.com/pw/AIL4fc_nXeykJFvZXJOlh6EUytTSyh-41haMxARfa1KQX-YHNtQEM2vtPKPmrcP3f6irFsra_L2gXhjlxy7yLhMz_0roah5LT--RJR4eXu4s_2vjAVKLGhxsdPdBuAvg-b8g2dcRJ0dhMA9JrcTuV54XSK33og=w956-h1630-s-no?authuser=0  "Progress bars")
+
+### Coming next 
+
+Probably, if and when I feel like doing it:
+
+- Photo/images support
+- Countdowns
+- "Done" dates
+- Hyperlinks
+- Maps/GPS coordinates
