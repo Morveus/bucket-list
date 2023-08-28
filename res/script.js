@@ -21,6 +21,7 @@ window.onload = function() {
 		        let pct = bucketList[i].pct;
                 let start = bucketList[i].start;
                 let end = bucketList[i].end;
+                let done = bucketList[i].done;
             
 
                 var percentage = 0;
@@ -35,7 +36,17 @@ window.onload = function() {
 
                 if (typeof start === 'string' && typeof end === 'string') {
                     percentage = calculatePercentageAdvancement(start, end);
-                 }             
+                }
+
+                if (typeof done === 'string') {
+                    let doneDate = new Date(done);
+                    let today = new Date();
+                    today.setHours(0, 0, 0, 0);
+
+                    if (doneDate.getTime() === today.getTime()) {
+                        percentage = 100;
+                    }
+                }
 
                 if(percentage == 100){
                     itemDiv.className += " done";
