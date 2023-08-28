@@ -7,7 +7,7 @@ This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _
 Check it out on http://neil.fun
 
 ## Screenshot 
-![The lisr](https://lh3.googleusercontent.com/pw/AIL4fc_l3TOTaPb1cODRiuyzJ3WSt-hxESISwS0asIq8wBHq8qvkM7Yxbv2giAhbEevJ4Z6hgrj97nhUBQ64FGgxPl6G2uwIgzul10hZJbbI5J9PVyk_ErC7HXwJ-5XGlqN-sapoixKGROJv9Pm7FZeg9FUcMA=w956-h861-s-no?authuser=0 "The list")
+![The list](https://lh3.googleusercontent.com/pw/AIL4fc_l3TOTaPb1cODRiuyzJ3WSt-hxESISwS0asIq8wBHq8qvkM7Yxbv2giAhbEevJ4Z6hgrj97nhUBQ64FGgxPl6G2uwIgzul10hZJbbI5J9PVyk_ErC7HXwJ-5XGlqN-sapoixKGROJv9Pm7FZeg9FUcMA=w956-h861-s-no?authuser=0 "The list")
  
 
 ## Getting Started
@@ -75,3 +75,7 @@ The `status` property can have one of three values:
 - `0` = Not done: This is represented with a red emoji cross and a red background.
 - `1` = In progress: This is represented with an hourglass emoji and an orange background. For items in progress, you can also add either `progress` and `goal` as integers which will compute a progress percentage, or directly provide percentage as `pct` (from 0 to 100). In both cases, this will display a progress bar inside the item.
 - `2` = Done: This is represented with a green check mark emoji and a green background.
+
+This is what the progress bars look like:
+
+![Progress bars](https://lh3.googleusercontent.com/pw/AIL4fc_nXeykJFvZXJOlh6EUytTSyh-41haMxARfa1KQX-YHNtQEM2vtPKPmrcP3f6irFsra_L2gXhjlxy7yLhMz_0roah5LT--RJR4eXu4s_2vjAVKLGhxsdPdBuAvg-b8g2dcRJ0dhMA9JrcTuV54XSK33og=w956-h1630-s-no?authuser=0  "Progress bars")
