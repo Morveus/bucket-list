@@ -16,21 +16,22 @@ window.onload = function() {
                 itemDiv.className += " inProgress";
                 emoji = "⏳";
 
-		let progress = bucketList[i].progress;
+		        let progress = bucketList[i].progress;
                 let goal = bucketList[i].goal;
-		let pct = bucketList[i].pct;
+		        let pct = bucketList[i].pct;
+
                 var percentage = 0;
 
                 if (typeof progress === 'number' && typeof goal === 'number' && progress >= 0 && goal > 0) {
-                    percentage = Math.floor((progress / goal) * 100);
+                   percentage = Math.floor((progress / goal) * 100);
                 }
 
-		if (typeof pct === 'number' && pct > 0) {
-                    percentage = pct;
+		        if (typeof pct === 'number' && pct > 0) {
+                   percentage = pct;
                 }
 
-		itemDiv.setAttribute("data-progress", percentage);
-		itemDiv.style.background = `linear-gradient(to right,
+		        itemDiv.setAttribute("data-progress", percentage);
+		        itemDiv.style.background = `linear-gradient(to right,
                                         #eddf61 0%,
                                         #eddf61 ${percentage}%,
                                         #ffffcc ${percentage}%,
@@ -48,4 +49,33 @@ window.onload = function() {
         itemDiv.innerText = bucketList[i].item + " " + emoji;
         bucketListDiv.appendChild(itemDiv);
     }
+}
+
+function calculatePercentageAdvancement(date1, date2) {
+    // Parse the dates
+    let d1 = new Date(date1);
+    let d2 = new Date(date2);
+    let now = new Date();
+
+    // Make sure the dates are in the correct order
+    if (d1 > d2) {
+        let temp = d1;
+        d1 = d2;
+        d2 = temp;
+    }
+
+    // Make sure the current date is within the range
+    if (now < d1 || now > d2) {
+        console.log("Current date is not within the provided range");
+        return;
+    }
+
+    // Calculate the total range and the advancement
+    let total = d2.getTime() - d1.getTime();
+    let advancement = now.getTime() - d1.getTime();
+
+    // Calculate the percentage
+    let percentage = Math.floor((advancement / total) * 100);
+
+    return percentage;
 }

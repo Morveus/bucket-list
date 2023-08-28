@@ -26,7 +26,7 @@ let bucketList = [
     {"item": "🏞️ Become carbon-negative", "status": 0},
     {"item": "🌼 Plant a garden", "status": 2},
     {"item": "🌲 Plant a tree", "status": 2},
-    {"item": "🌲 Plant a forest", "status": 1},
+    {"item": "🌲 Plant a forest", "status": 1, "start": "2023-01-01", "end": "2023-11-01"},
     {"item": "🎂 Reach age 20", "status": 2},
     {"item": "🎂 Reach age 30", "status": 2},
     {"item": "🎂 Reach age 40", "status": 1, "progress": 35, "goal": 40},
