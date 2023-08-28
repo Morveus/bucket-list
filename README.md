@@ -5,7 +5,7 @@ Personal simple bucket list of futile and superficial life experiences
 
 ## Features
 - "Bucket list" inspired by the Life Checklist (see after)
-- No frameworks, only rudimentary HTML/JS/CSS for the sake of simplicity 
+- No frameworks, only rudimentary HTML/JS/CSS for the sake of simplicity. A dynamic version might come later
 - Three states (red, orange, green)
 - Manually set progress bars (set by absolute percentage or current value vs goal - for instance "37 out of 365 books read")
 - Auto dark/light mode
@@ -112,6 +112,7 @@ This is what the progress bars look like:
 
 Probably, if and when I feel like doing it:
 
+- Make the app dynamic
 - Photo/images support
 - Countdowns
 - "Done" dates // **done on August 29th's update** ✔️

@@ -1,5 +1,3 @@
-let showStatusEmoji = true;
-
 window.onload = function() {
     let bucketListDiv = document.getElementById("bucketList");
     for(let i = 0; i < bucketList.length; i++) {
@@ -7,15 +5,10 @@ window.onload = function() {
         itemDiv.className = "bucketItem";
         let status = bucketList[i].status;
         let image = bucketList[i].image;
-        let imageHash = await getShortHash(bucketList[i].item);
-
-        if (image === undefined) {
-            image = "images/hashed/" + imageHash + ".jpg";
-        }
-
-        console.log(image);
-
+        let hasMetadata = false;
         let emoji = "";
+
+        // Handling statuses and properties here
         switch(status) {
             case 0:
                 itemDiv.className += " notDone";
@@ -75,10 +68,19 @@ window.onload = function() {
                 emoji = "✅";
                 break;
         }
+        // End status and properties handler
 
-	if(!showStatusEmoji) emoji = "";
+	    if(!config.showStatusEmoji) emoji = "";
+
         itemDiv.innerText = bucketList[i].item + " " + emoji;
         bucketListDiv.appendChild(itemDiv);
+
+        if(hasMetadata){
+            itemDev.addEventListener('click', function() {
+                this.classList.toggle('open');
+                this.classList.toggle('closed');
+            });
+        }
     }
 }
 

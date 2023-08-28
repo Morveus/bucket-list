@@ -9,6 +9,20 @@ div.bucketItem {
     font-size: 1.3em;
 }
 
+#toggleDiv {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#toggleDiv.closed {
+    max-height: 0;
+}
+
+#toggleDiv.open {
+    max-height: 200px; /* adjust this value to fit your content */
+}
+
+
 /* CSS for larger screens */
 @media (min-width: 950px) {
     div.bucketItem {
