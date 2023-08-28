@@ -6,6 +6,14 @@ window.onload = function() {
         let itemDiv = document.createElement("div");
         itemDiv.className = "bucketItem";
         let status = bucketList[i].status;
+        let image = bucketList[i].image;
+
+        if (image === undefined) {
+            image = "images/hashed/" + getShortHash(bucketList[i].item) + ".jpg";
+        }
+
+        console.log(image);
+
         let emoji = "";
         switch(status) {
             case 0:
@@ -42,8 +50,6 @@ window.onload = function() {
                     let today = new Date();
                     today.setHours(0, 0, 0, 0);
 
-			console.log(doneDate.getTime());
-			console.log(today.getTime());
                     if (doneDate.getTime() <= today.getTime()) {
                         percentage = 100;
                     }
@@ -70,7 +76,6 @@ window.onload = function() {
         }
 
 	if(!showStatusEmoji) emoji = "";
-
         itemDiv.innerText = bucketList[i].item + " " + emoji;
         bucketListDiv.appendChild(itemDiv);
     }
@@ -115,4 +120,12 @@ function imageExists(url, callback) {
     img.onload = function() { callback(true); };
     img.onerror = function() { callback(false); };
     img.src = url;
+}
+
+async function getShortHash(input) {
+    const msgUint8 = new TextEncoder().encode(input);                                    
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);                   
+    const hashArray = Array.from(new Uint8Array(hashBuffer));                             
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');         
+    return hashHex.slice(0, 8);
 }
