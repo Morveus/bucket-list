@@ -114,6 +114,6 @@ Probably, if and when I feel like doing it:
 
 - Photo/images support
 - Countdowns
-- "Done" dates **done** ✔️
+- "Done" dates // **done on August 29th's update** ✔️
 - Hyperlinks
 - Maps/GPS coordinates
