@@ -3,6 +3,13 @@ Personal simple bucket list of futile and superficial life experiences
 
 ("Seau", pronounced "SO" means "bucket" in French 🇫🇷)
 
+## Features
+- "Bucket list" inspired by the Life Checklist (see after)
+- No frameworks, only rudimentary HTML/JS/CSS for the sake of simplicity 
+- Three states (red, orange, green)
+- Progress bars
+- Auto dark/light mode
+
 ## Credits
 This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _exactly_ a bucket list: it is whatever you want it to be: bucket list, life checklist, achievements list...)
 
