@@ -8,6 +8,9 @@ This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _
 
 Check it out on http://neil.fun
 
+## Fun facts 
+This project has been *100% from start to finish* made during an insomnia, using only a smartphone and a touch keyboard. My arms hurt. 
+
 ## Screenshot 
 ![The list](https://lh3.googleusercontent.com/pw/AIL4fc_l3TOTaPb1cODRiuyzJ3WSt-hxESISwS0asIq8wBHq8qvkM7Yxbv2giAhbEevJ4Z6hgrj97nhUBQ64FGgxPl6G2uwIgzul10hZJbbI5J9PVyk_ErC7HXwJ-5XGlqN-sapoixKGROJv9Pm7FZeg9FUcMA=w956-h861-s-no?authuser=0 "The list")
  
