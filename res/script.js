@@ -23,7 +23,6 @@ window.onload = function() {
                 let end = bucketList[i].end;
                 let done = bucketList[i].done;
             
-
                 var percentage = 0;
 
                 if (typeof progress === 'number' && typeof goal === 'number' && progress >= 0 && goal > 0) {
@@ -109,4 +108,11 @@ function calculatePercentageAdvancement(date1, date2) {
     let percentage = Math.floor((advancement / total) * 100);
 
     return percentage;
+}
+
+function imageExists(url, callback) {
+    var img = new Image();
+    img.onload = function() { callback(true); };
+    img.onerror = function() { callback(false); };
+    img.src = url;
 }
