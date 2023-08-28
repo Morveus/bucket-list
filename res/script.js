@@ -37,7 +37,13 @@ window.onload = function() {
                     percentage = calculatePercentageAdvancement(start, end);
                  }             
 
-		        itemDiv.setAttribute("data-progress", percentage);
+                if(percentage == 100){
+                    itemDiv.className += " done";
+                    emoji = "✅";
+                    break;
+                }
+
+                itemDiv.setAttribute("data-progress", percentage);
 		        itemDiv.style.background = `linear-gradient(to right,
                                         #eddf61 0%,
                                         #eddf61 ${percentage}%,
