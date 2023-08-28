@@ -1,13 +1,19 @@
 # bucket-list
 Personal simple bucket list of futile and superficial life experiences
 
+## Credits
+This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _exactly_ a bucket list: it is whatever you want it to be: bucket list, life checklist, achievements list...)
+
+Check it out on http://neil.fun
+
+## Screenshot 
+![The lisr](https://lh3.googleusercontent.com/pw/AIL4fc_l3TOTaPb1cODRiuyzJ3WSt-hxESISwS0asIq8wBHq8qvkM7Yxbv2giAhbEevJ4Z6hgrj97nhUBQ64FGgxPl6G2uwIgzul10hZJbbI5J9PVyk_ErC7HXwJ-5XGlqN-sapoixKGROJv9Pm7FZeg9FUcMA=w956-h861-s-no?authuser=0 "The list")
+ 
+
 ## Getting Started
 
 1. **Clone the repository.**
 2. **Rename "bucketList.js.sample" to "bucketList.js".** This file will serve as the source for your bucket list items.
-
-## Credits
-This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _exactly_ a bucket list: it is whatever you want it to be: bucket list, life checklist, achievements list...)
 
 ## How It Works
 
