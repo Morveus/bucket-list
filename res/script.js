@@ -7,9 +7,9 @@ window.onload = function() {
         itemDiv.className = "bucketItem";
         let status = bucketList[i].status;
         let image = bucketList[i].image;
+        let imageHash = await getShortHash(bucketList[i].item);
 
         if (image === undefined) {
-            let imageHash = await getShortHash(bucketList[i].item);
             image = "images/hashed/" + imageHash + ".jpg";
         }
 
