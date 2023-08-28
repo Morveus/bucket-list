@@ -6,9 +6,12 @@ Personal simple bucket list of futile and superficial life experiences
 1. **Clone the repository.**
 2. **Rename "bucketList.js.sample" to "bucketList.js".** This file will serve as the source for your bucket list items.
 
+## Credits
+This is largely inspired from Neal Agrawal's Life Checklist (and therefore not _exactly_ a bucket list: it is whatever you want it to be: bucket list, life checklist, achievements list...)
+
 ## How It Works
 
-The application generates a list on load, which requires JavaScript. The list items are pulled from the `bucketList.js` file.
+The application generates the HTML contents on load, which requires JavaScript. The list items are pulled from the `bucketList.js` file.
 
 ### bucketList.js File
 
@@ -66,5 +69,3 @@ The `status` property can have one of three values:
 - `0` = Not done: This is represented with a red emoji cross and a red background.
 - `1` = In progress: This is represented with an hourglass emoji and an orange background. For items in progress, you can also add either `progress` and `goal` as integers which will compute a progress percentage, or directly provide percentage as `pct` (from 0 to 100). In both cases, this will display a progress bar inside the item.
 - `2` = Done: This is represented with a green check mark emoji and a green background.
-
-Now, you're all set to start working on your bucket list! Enjoy!
