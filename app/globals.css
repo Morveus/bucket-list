@@ -14,6 +14,27 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  #footer {
+    color: white;
+  }
+      
+  #footer a {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: #fdfdfd; /* light mode */
+  }
+
+  #footer {
+      color: black;
+  }
+
+  #footer a {
+    color: black;
+  }
 }
 
 body {
@@ -24,4 +45,52 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+#footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+div.bucketItem {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;  /* auto will center the div */
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* This makes sure that padding and border are included in the element's total width and height */
+  font-size: 1.3em;
+}
+
+/* CSS for larger screens */
+@media (min-width: 950px) {
+  div.bucketItem {
+      width: 500px;
+  }
+}
+
+div.bucketItem:hover {
+  background-color: #f0f0f0;
+}
+
+div.notDone {
+  background-color: #ffe6e6;
+  border: 2px solid #ff0000;
+}
+
+div.inProgress {
+  background-color: #ffffcc;
+  border: 2px solid #ff9900;
+}
+
+div.done {
+  background-color: #e6ffe6;
+  border: 2px solid #008000;
 }
