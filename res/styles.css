@@ -87,3 +87,15 @@ body {
     text-align: center;
     font-size: 0.8em;
 }
+
+@media (min-width: 1500px) {
+    div.bucketItem {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1450px) {
+    div.bucketItem {
+        width: 90%; /* or any other value that suits your design */
+    }
+}
